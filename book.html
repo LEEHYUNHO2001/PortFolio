@@ -15,7 +15,7 @@
 </head>
 <body >
     <main class="main-book">
-        <a href="index.html" class="a-book-right"></a>
+        <button onclick="javascript:link()" class="btn-book-right"></button>
         <section class="sec-book">
             <section class="section-book-front">
                 <h1 class="sr-only">Port Folio Book</h1>
@@ -30,16 +30,35 @@
                     <p class="introduction">Front-End 개발자 이현호입니다.</p>
                 </article>
             </section>
-            <a href="index.html" class="a-book-back">
-                <div class="back-item1"></div>
-                <div class="back-item2"></div>
-                <div class="back-item3"></div>
-                <div class="back-item4"></div>
-                <div class="back-item5"></div>
-                <div class="back-item6"></div>
-            </a>
+            <button onclick="javascript:link()" class="btn-book-back">
+                <div class="back-item back-item1"></div>
+                <div class="back-item back-item2"></div>
+                <div class="back-item back-item3"></div>
+                <div class="back-item back-item4"></div>
+                <div class="back-item back-item5"></div>
+                <div class="back-item back-item6"></div>
+            </button>
         </section>
         
     </main>
+    <script>
+    const link = () => {
+        setTimeout(() => {
+            location.href = 'index.html';
+        }, 1000);
+    }
+    </script>
+    <script>
+        const btn_right = document.querySelector('.btn-book-right');
+        const btn_back = document.querySelector('.btn-book-back');
+        btn_right.addEventListener('click', () => {
+            btn_back.classList.toggle('on');
+            btn_right.classList.toggle('on');
+        });
+        btn_back.addEventListener('click', () => {
+            btn_right.classList.toggle('on');
+            btn_back.classList.toggle('on');
+        });
+    </script>
 </body>
 </html>
