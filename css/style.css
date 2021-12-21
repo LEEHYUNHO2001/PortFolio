@@ -1,3 +1,7 @@
 @import "reset.css";
 @import "component.css";
+
 @import "book.css";
+
+@import "screen/mainSec.css";
+@import "screen/aboutSec.css";

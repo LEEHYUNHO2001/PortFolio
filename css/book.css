@@ -31,8 +31,12 @@
 .btn-book-back.on {
   background: pink;
   transform: rotateX(180deg);
+  border: none;
   width: 40vw;
   height: 70vh;
+}
+.btn-book-right.on {
+  border-left: 2px solid rgb(231, 221, 226);
 }
 .btn-book-right,
 .btn-book-back {

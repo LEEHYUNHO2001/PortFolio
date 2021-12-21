@@ -1,0 +1,103 @@
+/* .header-menu {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+} */
+/* https://kim-ji-min.github.io/My-Portfolio/ */
+
+.section-main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../../img/main-sec.jpg") center center/cover no-repeat;
+}
+.h3-section-main {
+  position: absolute;
+  top: 40vh;
+  left: 20vh;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 120px;
+  background: linear-gradient(to right top, rgb(19, 19, 189), #7a9fbf);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.speech-bubble {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 40vh;
+  right: 10vh;
+  background: #f2c335;
+  border-radius: 50%;
+  text-align: center;
+}
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 42px solid transparent;
+  border-top-color: #f2c335;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -90px;
+  margin-bottom: -22px;
+}
+.speech-bubble p {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 40px 0px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 1250px) {
+  .h3-section-main {
+    font-size: 70px;
+    line-height: 110px;
+  }
+  .speech-bubble {
+    width: 220px;
+    height: 140px;
+    top: 45vh;
+    right: 5vh;
+  }
+  .speech-bubble:after {
+    border: 30px solid transparent;
+    border-top-color: #f2c335;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -50px;
+    margin-bottom: -12px;
+  }
+  .speech-bubble p {
+    font-size: 16px;
+    padding: 26px 0px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .h3-section-main {
+    font-size: 50px;
+    line-height: 80px;
+    top: 10vh;
+  }
+  .speech-bubble {
+    width: 220px;
+    height: 140px;
+    top: 30vh;
+    right: 5vh;
+  }
+  .speech-bubble:after {
+    display: none;
+  }
+  .speech-bubble p {
+    font-size: 16px;
+    padding: 26px 0px;
+    line-height: 30px;
+  }
+}
