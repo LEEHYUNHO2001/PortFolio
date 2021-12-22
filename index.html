@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
 
+    <link
+      rel="shortcut icon"
+      href="public/me_favicon.ico"
+      type="image/x-icon"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,11 +19,15 @@
       rel="stylesheet"
     />
 
+    <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+
+    <!-- chartjs cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Lee Hyunho PORT FOLIO</title>
     <style></style>
   </head>
@@ -32,9 +42,6 @@
           </li>
           <li>
             <a href="#"> ABOUT ME </a>
-          </li>
-          <li>
-            <a href="#"> SKILLS </a>
           </li>
           <li>
             <a href="#"> PROJECTS </a>
@@ -79,7 +86,67 @@
         </p>
       </div>
     </section>
-    <section class="section-aboutme"></section>
+    <section class="section-aboutme">
+      <h3 class="h3-aboutme">ABOUT ME</h3>
+      <article class="art-aboutme">
+        <div class="info-container">
+          <img src="img/me.jpg" alt="이현호 사진" class="img-aboutme" />
+          <div class="info-aboutme">
+            <div class="info intro-list">
+              <p>Introduce</p>
+              <ul>
+                <li>이현호</li>
+                <li>1996.07.09</li>
+                <li>dlgusgh200240@gmail.com</li>
+              </ul>
+            </div>
+            <div class="info edu-list">
+              <p>Education</p>
+              <ul>
+                <li>멋쟁이사자처럼 프론트엔스 스쿨 1기</li>
+                <li>명지대학교 정보통신공학과 졸업</li>
+                <li>네이버 시스템 장기현장실습</li>
+              </ul>
+            </div>
+            <div class="info ops-list">
+              <p>Open Source</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/reactjs/ko.reactjs.org/issues/374"
+                    target="_blank"
+                    >React Beta Translate</a
+                  >
+                  &#128072; click
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="chart-container">
+          <div class="myChart">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="info-aboutme">
+            <div class="info react-list">
+              <p>React</p>
+              <ul>
+                <li>함수형 컴포넌트 + Hooks</li>
+                <li>Context API, Redux, useSWR</li>
+                <li>Next</li>
+                <li>TypeScript</li>
+                <li>Styled-components</li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="section-skills">
+      <h3 class="h3-skills">SKILLS</h3>
+      <article class="art-skills"></article>
+    </section>
     <script>
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -91,6 +158,47 @@
           $(".sub-menu").removeClass("down");
         }
       });
+    </script>
+    <script>
+      const labels = [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "jQuery",
+        "React",
+        "TypeScript",
+        "Express",
+      ];
+      const data4 = {
+        labels: labels,
+        datasets: [
+          {
+            label: "프로그래밍 언어",
+            backgroundColor: [
+              "#E44D26",
+              "#563D7C",
+              "#F7DF1E",
+              "#131B28",
+              "#61DAFB",
+              "#007ACC",
+              "#83CD29",
+            ], // rgba(255, 0, 0, 0.5), #ff0000
+            borderColor: "black",
+            borderWidth: 3,
+            hoverBorderWidth: 5,
+            width: "500px",
+            data: [3, 3, 2, 2, 2, 1, 2],
+          },
+        ],
+      };
+      const config = {
+        type: "pie", // pie, bar, line, doughnut, polarArea
+        data: data4,
+        options: {},
+      };
+    </script>
+    <script>
+      const myChart = new Chart(document.getElementById("myChart"), config);
     </script>
   </body>
 </html>

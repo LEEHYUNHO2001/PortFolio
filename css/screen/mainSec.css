@@ -80,11 +80,11 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   .h3-section-main {
     font-size: 50px;
     line-height: 80px;
-    top: 10vh;
+    top: 0vh;
   }
   .speech-bubble {
     width: 220px;
