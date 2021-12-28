@@ -4,201 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
 
     <link
       rel="shortcut icon"
       href="public/me_favicon.ico"
       type="image/x-icon"
     />
+    <link rel="icon" href="public/me_favicon.ico" type="image/x-icon" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- jQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- chartjs cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <title>Lee Hyunho PORT FOLIO</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>PORT FOLIO BOOK</title>
     <style></style>
   </head>
-  <body class="body-portfolio">
-    <h1 class="sr-only">이현호 포트폴리오</h1>
-    <header class="header-menu">
-      <h2 class="sr-only">이현호 포트폴리오 메뉴</h2>
-      <nav class="nav-menu">
-        <ul class="menu-list">
-          <li>
-            <a href="#"> HOME </a>
-          </li>
-          <li>
-            <a href="#"> ABOUT ME </a>
-          </li>
-          <li>
-            <a href="#"> PROJECTS </a>
-          </li>
-          <li>
-            <a href="#" class="menu-link"> Link </a>
-            <ul class="sub-menu">
-              <li class="sub-item">
-                <a href="https://github.com/LEEHYUNHO2001" target="_blank"
-                  >GitHub</a
-                >
-              </li>
-              <li class="sub-item">
-                <a href="https://velog.io/@leehyunho2001" target="_blank"
-                  >Velog</a
-                >
-              </li>
-              <li class="sub-item">
-                <a
-                  href="https://fabulous-cost-f98.notion.site/HyunHo-Lee-a5be52c66f8f4e1da4b2f58298e50937"
-                  target="_blank"
-                  >Notion</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#"> CONTACT </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="section-main">
-      <h3 class="h3-section-main">
-        Front End<br />
-        Developer
-      </h3>
-      <div class="speech-bubble">
-        <p>
-          안녕하세요.<br />React 프론트엔드 개발자<br />
-          이현호입니다.
-        </p>
-      </div>
-    </section>
-    <section class="section-aboutme">
-      <h3 class="h3-aboutme">ABOUT ME</h3>
-      <article class="art-aboutme">
-        <div class="info-container">
-          <img src="img/me.jpg" alt="이현호 사진" class="img-aboutme" />
-          <div class="info-aboutme">
-            <div class="info intro-list">
-              <p>Introduce</p>
-              <ul>
-                <li>이현호</li>
-                <li>1996.07.09</li>
-                <li>dlgusgh200240@gmail.com</li>
-              </ul>
-            </div>
-            <div class="info edu-list">
-              <p>Education</p>
-              <ul>
-                <li>멋쟁이사자처럼 프론트엔스 스쿨 1기</li>
-                <li>명지대학교 정보통신공학과 졸업</li>
-                <li>네이버 시스템 장기현장실습</li>
-              </ul>
-            </div>
-            <div class="info ops-list">
-              <p>Open Source</p>
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/reactjs/ko.reactjs.org/issues/374"
-                    target="_blank"
-                    >React Beta Translate</a
-                  >
-                  &#128072; click
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="chart-container">
-          <div class="myChart">
-            <canvas id="myChart"></canvas>
-          </div>
-          <div class="info-aboutme">
-            <div class="info react-list">
-              <p>React</p>
-              <ul>
-                <li>함수형 컴포넌트 + Hooks</li>
-                <li>Context API, Redux, useSWR</li>
-                <li>Next</li>
-                <li>TypeScript</li>
-                <li>Styled-components</li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section class="section-skills">
-      <h3 class="h3-skills">SKILLS</h3>
-      <article class="art-skills"></article>
-    </section>
+  <body>
+    <main class="main-book">
+      <button onclick="javascript:link()" class="btn-book-right"></button>
+      <section class="sec-book">
+        <section class="section-book-front">
+          <h1 class="sr-only">Port Folio Book</h1>
+          <header class="hd-book">
+            <h2 class="h2-bookname">이현호</h2>
+            <img src="img/lee.jpg" alt="이현호 사진" class="img-me" />
+          </header>
+          <article class="art-introduction">
+            <h3 class="sr-only">자기소개</h3>
+            <p class="introduction">새로운 기술에 도전하고,</p>
+            <p class="introduction">더 나은 협업을 위해 고민하는</p>
+            <p class="introduction">Front-End 개발자 이현호입니다.</p>
+          </article>
+        </section>
+        <button onclick="javascript:link()" class="btn-book-back">
+          <div class="back-item back-item1"></div>
+          <div class="back-item back-item2"></div>
+          <div class="back-item back-item3"></div>
+          <div class="back-item back-item4"></div>
+          <div class="back-item back-item5"></div>
+          <div class="back-item back-item6"></div>
+        </button>
+      </section>
+    </main>
     <script>
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll >= 50) {
-          $(".menu-list").addClass("down");
-          $(".sub-menu").addClass("down");
-        } else {
-          $(".menu-list").removeClass("down");
-          $(".sub-menu").removeClass("down");
-        }
+      const link = () => {
+        setTimeout(() => {
+          location.href = "main.html";
+        }, 950);
+      };
+    </script>
+    <script>
+      const btn_right = document.querySelector(".btn-book-right");
+      const btn_back = document.querySelector(".btn-book-back");
+      btn_right.addEventListener("click", () => {
+        btn_back.classList.toggle("on");
+        btn_right.classList.toggle("on");
       });
-    </script>
-    <script>
-      const labels = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "jQuery",
-        "React",
-        "TypeScript",
-        "Express",
-      ];
-      const data4 = {
-        labels: labels,
-        datasets: [
-          {
-            label: "프로그래밍 언어",
-            backgroundColor: [
-              "#E44D26",
-              "#563D7C",
-              "#F7DF1E",
-              "#131B28",
-              "#61DAFB",
-              "#007ACC",
-              "#83CD29",
-            ], // rgba(255, 0, 0, 0.5), #ff0000
-            borderColor: "black",
-            borderWidth: 3,
-            hoverBorderWidth: 5,
-            width: "500px",
-            data: [3, 3, 2, 2, 2, 1, 2],
-          },
-        ],
-      };
-      const config = {
-        type: "pie", // pie, bar, line, doughnut, polarArea
-        data: data4,
-        options: {},
-      };
-    </script>
-    <script>
-      const myChart = new Chart(document.getElementById("myChart"), config);
+      btn_back.addEventListener("click", () => {
+        btn_right.classList.toggle("on");
+        btn_back.classList.toggle("on");
+      });
     </script>
   </body>
 </html>
