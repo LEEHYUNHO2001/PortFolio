@@ -101,3 +101,15 @@
     line-height: 30px;
   }
 }
+
+@media screen and (max-device-width: 800px) {
+  .section-main {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: url("../../img/main-sec.jpg") center center/cover no-repeat;
+  }
+  .speech-bubble {
+    display: none;
+  }
+}

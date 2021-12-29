@@ -78,6 +78,34 @@
 .sub-menu.down:hover {
   background-color: #fff;
 }
+/* 모바일 메뉴 */
+.menu-mobile {
+  display: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  font-weight: 700;
+  margin: 20px;
+  background-color: black;
+}
+.list-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 700;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 50px;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+}
+.list-mobile.on {
+  display: flex;
+}
 
 @media screen and (max-width: 950px) {
   .menu-list {
@@ -90,5 +118,14 @@
   }
   .sub-menu > li {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  .nav-menu {
+    display: none;
+  }
+  .menu-mobile {
+    display: inline-block;
   }
 }

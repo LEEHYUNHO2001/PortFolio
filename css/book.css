@@ -206,4 +206,9 @@
     padding: 10px 0px;
     border-radius: 10px;
   }
+  .btn-book-right.on,
+  .btn-book-back.on {
+    width: 40vw;
+    height: 40vh;
+  }
 }

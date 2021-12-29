@@ -56,10 +56,18 @@
       btn_right.addEventListener("click", () => {
         btn_back.classList.toggle("on");
         btn_right.classList.toggle("on");
+        setTimeout(() => {
+          btn_right.classList.toggle("on");
+          btn_back.classList.toggle("on");
+        }, 1000);
       });
       btn_back.addEventListener("click", () => {
         btn_right.classList.toggle("on");
         btn_back.classList.toggle("on");
+        setTimeout(() => {
+          btn_right.classList.toggle("on");
+          btn_back.classList.toggle("on");
+        }, 1000);
       });
     </script>
   </body>

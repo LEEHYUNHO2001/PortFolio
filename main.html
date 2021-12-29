@@ -35,19 +35,46 @@
     <h1 class="sr-only">이현호 포트폴리오</h1>
     <header class="header-menu">
       <h2 class="sr-only">이현호 포트폴리오 메뉴</h2>
+      <nav class="nav-mobile">
+        <div class="menu-mobile">Menu</div>
+        <ul class="list-mobile">
+          <li>
+            <a href="#1"> HOME </a>
+          </li>
+          <li>
+            <a href="#2"> ABOUT ME </a>
+          </li>
+          <li>
+            <a href="#3"> PROJECTS </a>
+          </li>
+          <li>
+            <a href="#4"> CONTACT </a>
+          </li>
+        </ul>
+        <script>
+          const mobile = document.querySelector(".menu-mobile");
+          const mobileList = document.querySelector(".list-mobile");
+          mobile.addEventListener("click", () => {
+            document.querySelector(".list-mobile").classList.toggle("on");
+          });
+          mobileList.addEventListener("click", () => {
+            document.querySelector(".list-mobile").classList.toggle("on");
+          });
+        </script>
+      </nav>
       <nav class="nav-menu">
         <ul class="menu-list">
           <li>
-            <a href="#"> HOME </a>
+            <a href="#1"> HOME </a>
           </li>
           <li>
-            <a href="#"> ABOUT ME </a>
+            <a href="#2"> ABOUT ME </a>
           </li>
           <li>
-            <a href="#"> PROJECTS </a>
+            <a href="#3"> PROJECTS </a>
           </li>
           <li>
-            <a href="#" class="menu-link"> Link </a>
+            <a class="menu-link"> Link </a>
             <ul class="sub-menu">
               <li class="sub-item">
                 <a href="https://github.com/LEEHYUNHO2001" target="_blank"
@@ -69,12 +96,12 @@
             </ul>
           </li>
           <li>
-            <a href="#"> CONTACT </a>
+            <a href="#4"> CONTACT </a>
           </li>
         </ul>
       </nav>
     </header>
-    <section class="section-main">
+    <section id="1" class="section-main">
       <h3 class="h3-section-main">
         Front End<br />
         Developer
@@ -86,7 +113,7 @@
         </p>
       </div>
     </section>
-    <section class="section-aboutme">
+    <section id="2" class="section-aboutme">
       <h3 class="h3-aboutme">ABOUT ME</h3>
       <article class="art-aboutme">
         <div class="info-container">
@@ -143,7 +170,7 @@
         </div>
       </article>
     </section>
-    <section class="section-projects">
+    <section id="3" class="section-projects">
       <h3 class="h3-projects">PROJECTS</h3>
       <article class="art-projects">
         <ul class="projects-list">
@@ -190,7 +217,7 @@
         </ul>
       </article>
     </section>
-    <section class="section-contact">
+    <section id="4" class="section-contact">
       <h3 class="h3-contact">CONTACT</h3>
       <article class="art-contact"></article>
     </section>

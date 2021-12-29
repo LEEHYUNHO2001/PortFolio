@@ -125,3 +125,48 @@
     margin-bottom: 10px;
   }
 }
+
+@media screen and (max-device-width: 800px) {
+  .h3-aboutme {
+    font-size: 40px;
+    padding: 4vh 0px;
+  }
+  .art-aboutme {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .info-container,
+  .chart-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .img-aboutme {
+    width: 150px;
+    height: 200px;
+    border-radius: 25px;
+  }
+  .info-aboutme > .info > p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .info-aboutme > .info > ul > li {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .edu-list,
+  .ops-list,
+  .intro-list,
+  .react-list {
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .myChart {
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+  }
+  .react-list {
+    text-align: center;
+  }
+}
