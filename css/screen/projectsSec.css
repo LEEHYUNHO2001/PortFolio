@@ -1,5 +1,6 @@
 .section-projects {
   width: 100%;
+  /* background-color: #f2c1b6; */
 }
 .h3-projects {
   font-size: 70px;
@@ -9,16 +10,19 @@
   /* color: white; */
 }
 .projects-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2vw;
-  margin: 0 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.projects-item {
+.projects-list .projects-item {
+  width: 100%;
   position: relative;
+  text-align: center;
 }
 .img-projects {
-  width: 90%;
+  width: 70%;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -27,11 +31,63 @@
   border: 1px solid #000;
 }
 .ul-projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: -1;
+  top: 20px;
+  /* left: 0; */
 }
 .img-projects:hover + .ul-projects {
   opacity: 1;
+}
+.header-projects {
+  font-size: 2em;
+  margin-bottom: 20px;
+  background: #090b0d;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 30px;
+}
+.stack-list {
+  margin-bottom: 20px;
+}
+.stack-item {
+  font-weight: 700;
+  padding: 5px 15px;
+  background-color: chocolate;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.react {
+  background-color: #c9f2e7;
+}
+.next {
+  background-color: #262523;
+  color: #fff;
+}
+.ts {
+  background-color: #033e8c;
+  color: #fff;
+}
+.swr {
+  background-color: #bbd98f;
+}
+.axios {
+  background-color: #d96c94;
+}
+.vercel {
+  background-color: #090b0d;
+  color: #fff;
+}
+.content-projects {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+.content-projects > p {
 }

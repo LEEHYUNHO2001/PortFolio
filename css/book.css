@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
 
 .main-book {
   position: relative;
   perspective: 800px;
   margin-top: 8%;
-  font-family: "Nanum Pen Script", cursive;
+  font-family: "Noto Sans KR", sans-serif;
   transition: all 1s;
 }
 
@@ -101,7 +101,7 @@
   width: 90px;
   height: 30px;
   color: #fff;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 30px;
 }
 .art-introduction {
@@ -113,7 +113,7 @@
 }
 .introduction {
   color: #fff;
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .go-portfolio {
@@ -174,13 +174,13 @@
   }
   .h2-bookname {
     margin: 10px auto;
-    font-size: 32px;
+    font-size: 28px;
   }
   .art-introduction {
     width: 85%;
   }
   .introduction {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 @media screen and (max-device-width: 600px) {
@@ -199,7 +199,7 @@
     margin: 0px 0px 10px 0px;
   }
   .introduction {
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 10px;
   }
   .art-introduction {
