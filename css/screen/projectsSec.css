@@ -146,3 +146,73 @@
 어필 포인트
 velog 쓸때 이 기술을 왜 썻는지. 다른 방식도 있는데 저것보다 나은 이유가 무엇인지.
 */
+@media screen and (max-width: 1240px) {
+  .content-projects {
+    width: 90%;
+  }
+  .header-projects {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    background: #090b0d;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px 25px;
+  }
+  .ul-projects {
+    display: flex;
+    width: 60%;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 4vh;
+    transition: all 1s ease-in-out;
+  }
+  .stack-item {
+    font-weight: 700;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .content-projects > div {
+    width: 50%;
+    font-size: 13px;
+    padding: 10px;
+    line-height: 22px;
+  }
+  .content-projects > div > a > img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  .header-projects {
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+  }
+  .content-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-projects > div {
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    line-height: 16px;
+  }
+  .stack-item {
+    font-size: 10px;
+  }
+  .content-projects > div > p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .content-projects > div > a > img {
+    width: 30px;
+    height: 30px;
+  }
+  .content-projects > div:not(:last-child) {
+    margin: 10px 0px;
+  }
+}
