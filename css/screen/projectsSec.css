@@ -1,6 +1,6 @@
 .section-projects {
   width: 100%;
-  /* background-color: #f2c1b6; */
+  background-color: #f2c1b6;
 }
 .h3-projects {
   font-size: 70px;
@@ -24,7 +24,7 @@
 .ul-projects {
   display: flex;
   width: 60%;
-  height: 400px;
+  height: 40vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,12 @@
 }
 .ul-projects.futurama {
   padding: 100px 0;
-  background: url("../../img/Futurama.jpg");
+  background: url("../../img/Futurama.jpg") center center;
+  background-size: cover;
+}
+.ul-projects.loltest {
+  padding: 100px 0;
+  background: url("../../img/loltest.jpg") center center;
   background-size: cover;
 }
 .ul-projects > li {
@@ -90,6 +95,20 @@
 .vercel {
   background-color: #090b0d;
   color: #fff;
+}
+.html {
+  background-color: #d90404;
+  color: #fff;
+}
+.css {
+  background-color: #05aff2;
+  color: #fff;
+}
+.js {
+  background-color: #f2c12e;
+}
+.netlify {
+  background-color: #04bf45;
 }
 .content-projects {
   display: flex;
