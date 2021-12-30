@@ -56,6 +56,9 @@
   background-color: #465e8c;
   color: #fff;
 }
+.open-source:hover {
+  color: #f26241;
+}
 .myChart {
   width: 400px;
   height: 400px;
