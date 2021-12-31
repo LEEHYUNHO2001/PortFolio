@@ -139,6 +139,21 @@
 .content-projects > div > p:not(:last-child) {
   margin-bottom: 20px;
 }
+.main-toy {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.main-toy > a > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
 /* 
 어바웃 장황 - 어바웃빼면 내용이없음
 어바웃 미가 에듀케이션
