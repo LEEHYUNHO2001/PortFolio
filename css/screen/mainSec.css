@@ -165,10 +165,10 @@
     text-align: center;
   }
   .note {
-    width: 330px;
+    width: 310px;
     height: 55vh;
     background-color: #fff;
-    border: 20px solid #a67a6a;
+    border: 10px solid #a67a6a;
   }
   .note > li {
     height: 30px;
