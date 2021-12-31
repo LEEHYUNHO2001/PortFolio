@@ -23,7 +23,7 @@
   padding: 30px 100px;
   font-weight: 700;
   font-size: 20px;
-  color: #465e8c;
+  color: #593c31;
   transition: all 0.2s ease-in-out;
 }
 .header-menu .menu-list li {
@@ -36,12 +36,12 @@
   left: 0;
   width: 0%;
   height: 3px;
-  background-color: #2c4001;
+  background-color: #fff;
   transition: all ease-in-out 0.25s 0s;
 }
 .header-menu .menu-list li:hover::after {
   width: 100%;
-  background-color: #fff;
+  background-color: #a67a6a;
 }
 .menu-list.down {
   background-color: #fff;

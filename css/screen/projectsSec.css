@@ -187,6 +187,10 @@ velog 쓸때 이 기술을 왜 썻는지. 다른 방식도 있는데 저것보�
 }
 
 @media screen and (max-device-width: 800px) {
+  .h3-projects {
+    font-size: 40px;
+    padding: 6vh 0px;
+  }
   .ul-projects {
     width: 90%;
     height: 35vh;
