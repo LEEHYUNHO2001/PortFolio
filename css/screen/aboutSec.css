@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   text-align: center;
-  background: #f2b263;
+  background: #e5e9eb;
 }
 .h3-aboutme {
   font-size: 70px;
@@ -41,20 +41,20 @@
 .ops-list,
 .intro-list,
 .react-list {
-  background-color: #f25c05;
+  background-color: #fff;
   padding: 10px 20px;
   border-radius: 20px;
   text-align: start;
 }
 .edu-list {
-  background-color: #f29f05;
+  background-color: #fff;
 }
 .ops-list {
-  background-color: #f2b705;
+  background-color: #fff;
 }
 .react-list {
-  background-color: #465e8c;
-  color: #fff;
+  background-color: #fff;
+  color: #17161c;
 }
 .open-source:hover {
   color: #f26241;
@@ -130,6 +130,9 @@
 }
 
 @media screen and (max-device-width: 800px) {
+  .section-aboutme {
+    height: 120vh;
+  }
   .h3-aboutme {
     font-size: 40px;
     padding: 4vh 0px;
@@ -171,5 +174,6 @@
   }
   .react-list {
     text-align: center;
+    margin-top: 20px;
   }
 }

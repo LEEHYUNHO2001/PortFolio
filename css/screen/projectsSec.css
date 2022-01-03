@@ -1,6 +1,6 @@
 .section-projects {
   width: 100%;
-  background-color: #f2c1b6;
+  background-color: #fff;
 }
 .h3-projects {
   font-size: 70px;
@@ -30,7 +30,7 @@
   justify-content: center;
   border-radius: 20px;
   margin-bottom: 4vh;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .ul-projects.futurama {
   padding: 100px 0;
@@ -46,7 +46,7 @@
   display: none;
 }
 .ul-projects:hover {
-  background: #bf8845;
+  background: #4e5662;
 }
 .ul-projects:hover > li {
   display: flex;
@@ -54,8 +54,8 @@
 .header-projects {
   font-size: 2em;
   margin-bottom: 20px;
-  background: #090b0d;
-  color: #fff;
+  background: #e5e9eb;
+  color: #17161c;
   font-weight: 700;
   padding: 20px 30px;
 }
@@ -139,37 +139,31 @@
 .content-projects > div > p:not(:last-child) {
   margin-bottom: 20px;
 }
+
+.more-toy {
+  text-align: end;
+  padding: 30px;
+}
 .main-toy {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   font-size: 18px;
   font-weight: 700;
 }
-.main-toy > a > img {
-  width: 30px;
-  height: 30px;
+.main-toy > img {
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  margin-left: 10px;
 }
-/* 
-어바웃 장황 - 어바웃빼면 내용이없음
-어바웃 미가 에듀케이션
-누가 벨로그에 올린거 -> 매력적인 프로젝트가 아님
-어필 포인트
-velog 쓸때 이 기술을 왜 썻는지. 다른 방식도 있는데 저것보다 나은 이유가 무엇인지.
-*/
-@media screen and (max-width: 1240px) {
+.main-toy:hover {
+  color: #f26241;
+}
+
+@media screen and (max-width: 1250px) {
   .content-projects {
     width: 90%;
   }
   .header-projects {
     font-size: 1.5em;
     margin-bottom: 15px;
-    background: #090b0d;
-    color: #fff;
     font-weight: 700;
     padding: 15px 25px;
   }
