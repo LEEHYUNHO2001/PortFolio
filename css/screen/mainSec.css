@@ -141,6 +141,9 @@
 }
 
 @media screen and (max-device-width: 800px) {
+  .section-main {
+    padding: 0 15px;
+  }
   .coding-lee {
     width: 180px;
     height: 180px;
