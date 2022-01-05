@@ -103,7 +103,7 @@
   }
   .speech-bubble:after {
     border: 30px solid transparent;
-    border-top-color: #f2f2f2;
+    border-top-color: #e5e9eb;
     border-bottom: 0;
     border-left: 0;
     margin-left: -100px;
@@ -155,7 +155,7 @@
   }
   .speech-bubble:after {
     border: 30px solid transparent;
-    border-top-color: #f2f2f2;
+    border-top-color: #e5e9eb;
     border-bottom: 0;
     border-left: 0;
     margin-left: -80px;
