@@ -42,6 +42,11 @@
   background: url("../../img/loltest.jpg") center center;
   background-size: cover;
 }
+.ul-projects.SCP {
+  padding: 100px 0;
+  background: url("../../img/SCP.jpg") center center;
+  background-size: cover;
+}
 .ul-projects > li {
   display: none;
 }
