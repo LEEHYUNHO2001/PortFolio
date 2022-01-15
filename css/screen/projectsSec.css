@@ -115,6 +115,9 @@
 .netlify {
   background-color: #04bf45;
 }
+.aws {
+  background-color: #ffeebc;
+}
 .content-projects {
   display: flex;
   width: 80%;
