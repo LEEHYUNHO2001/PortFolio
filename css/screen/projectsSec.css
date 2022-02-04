@@ -47,6 +47,11 @@
   background: url("../../img/SCP.jpg") center center;
   background-size: cover;
 }
+.ul-projects.SDV {
+  padding: 100px 0;
+  background: url("../../img/sdv.jpg") center center;
+  background-size: cover;
+}
 .ul-projects > li {
   display: none;
 }
@@ -117,6 +122,10 @@
 }
 .aws {
   background-color: #ffeebc;
+}
+.strapi {
+  background-color: #8303a6;
+  color: #fff;
 }
 .content-projects {
   display: flex;

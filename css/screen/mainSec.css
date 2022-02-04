@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  background-color: #4e5662;
+  background-color: #000;
 }
 .h3-section-main {
   /* position: absolute;
@@ -38,6 +38,9 @@
   border-radius: 50%;
   text-align: center;
   margin-bottom: 350px;
+}
+.speech-bubble > p > a {
+  color: #f2784b;
 }
 .speech-bubble:after {
   content: "";
@@ -77,7 +80,7 @@
   justify-content: space-evenly;
   width: 460px;
   height: 60vh;
-  background-color: #fff;
+  background-color: #e5e9eb;
   border: 15px solid #17161c;
   font-family: "Noto Serif KR", serif;
 }
