@@ -32,6 +32,11 @@
   margin-bottom: 4vh;
   transition: all 0.5s ease-in-out;
 }
+.ul-projects.onboarding {
+  padding: 100px 0;
+  background: url("../../img/onboarding.jpg") center center;
+  background-size: cover;
+}
 .ul-projects.futurama {
   padding: 100px 0;
   background: url("../../img/Futurama.jpg") center center;
@@ -125,6 +130,20 @@
 }
 .strapi {
   background-color: #8303a6;
+  color: #fff;
+}
+.firebase {
+  background-color: #66add9;
+  color: #fff;
+}
+.fetch {
+  background-color: #d1d0f2;
+}
+.heroku {
+  background-color: #f2e205;
+}
+.redux {
+  background-color: #0540f2;
   color: #fff;
 }
 .content-projects {
