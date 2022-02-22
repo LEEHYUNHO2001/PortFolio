@@ -146,6 +146,10 @@
   background-color: #0540f2;
   color: #fff;
 }
+.scss {
+  background-color: #cf649a;
+  color: #fff;
+}
 .content-projects {
   display: flex;
   width: 80%;

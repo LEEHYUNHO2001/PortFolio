@@ -8,6 +8,9 @@
   height: 100vh;
   background-color: #262626;
 }
+.main-velog:hover {
+  text-decoration: underline;
+}
 .h3-section-main {
   /* position: absolute;
   top: 40vh;
